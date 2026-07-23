@@ -7,6 +7,10 @@ def calculate_grade(marks):
     return "C"
  else:
     return "F"
+
+def topper(marks_dict):
+ return max(marks_dict, key=marks_dict.get)
+
 if __name__ == "__main__":
     marks = 92
     print("Marks:", marks)
