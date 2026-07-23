@@ -12,6 +12,9 @@ def average(marks_list):
  return sum(marks_list) / len(marks_list)
 
  
+def topper(marks_dict):
+ return max(marks_dict, key=marks_dict.get)
+
 if __name__ == "__main__":
     marks = 92
     print("Marks:", marks)
